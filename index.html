@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UR Automations | Premium AI Front Desk for Aesthetic & Med Spa Clinics</title>
+  <meta name="description" content="Stop losing clients to missed calls and unanswered DMs. Meet the 24/7 AI Front Desk that instantly replies and books consultations on WhatsApp, Instagram, SMS, and Phone.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Overlays -->
+  <div class="bg-grid"></div>
+  <div class="glow-blob" style="top: 10%; left: 5%;"></div>
+  <div class="glow-blob" style="top: 35%; right: -10%; animation-delay: 2s;"></div>
+  <div class="glow-blob" style="top: 70%; left: -10%; animation-delay: 4s;"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="logo">
+        <span class="logo-icon"></span>
+        UR Automations
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#benefits" class="nav-link">Benefits</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="#schedule-consultation" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.85rem;">Book a Free Consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mouse-glow-container">
+
+    <!-- Subtle Background Clinical SVG Designs (Watermarks) -->
+    <!-- Hero Background Treatment Room (Bed, Lamp, Monitor) -->
+    <div class="bg-illustration bg-ill-room">
+      <svg viewBox="0 0 400 300">
+        <!-- Floor line -->
+        <line x1="20" y1="270" x2="380" y2="270" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-dasharray="4"/>
+        <!-- Health Monitor stand and screen -->
+        <line x1="45" y1="270" x2="45" y2="150" stroke="#8E8E93" stroke-width="4"/>
+        <rect x="15" y="90" width="60" height="60" rx="8" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+        <path d="M 20 120 L 32 120 L 37 100 L 42 140 L 47 115 L 52 120 L 70 120" fill="none" stroke="#C0FF04" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Side Table with Medicine tablets/bottle -->
+        <path d="M 75 210 L 105 210 M 90 210 L 90 270" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+        <rect x="79" y="192" width="11" height="18" rx="2" fill="none" stroke="#C0FF04" stroke-width="2.5"/>
+        <circle cx="94" cy="204" r="3" fill="#C0FF04"/>
+        <!-- Overhead dome lamp -->
+        <path d="M 200 20 L 200 50 L 170 80 L 190 105" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+        <ellipse cx="190" cy="105" rx="35" ry="10" fill="none" stroke="#C0FF04" stroke-width="3"/>
+        <polygon points="155,107 80,270 300,270 225,107" fill="rgba(192, 255, 4, 0.05)"/>
+        <!-- Bed cushion and legs -->
+        <line x1="140" y1="270" x2="140" y2="226" stroke="#FFFFFF" stroke-width="4"/>
+        <line x1="260" y1="270" x2="260" y2="226" stroke="#FFFFFF" stroke-width="4"/>
+        <rect x="110" y="210" width="180" height="16" rx="6" fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+        <rect x="115" y="198" width="25" height="12" rx="3" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+      </svg>
+    </div>
+
+    <!-- Solution/Benefits Section Background Tools (Stethoscope, Syringe, Tablets) -->
+    <div class="bg-illustration bg-ill-tools">
+      <svg viewBox="0 0 400 300">
+        <!-- Stethoscope -->
+        <circle cx="185" cy="40" r="5" fill="#C0FF04"/>
+        <circle cx="215" cy="40" r="5" fill="#C0FF04"/>
+        <path d="M 185 45 C 185 85, 215 85, 215 45" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+        <path d="M 200 75 L 200 95" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+        <path d="M 200 95 C 160 140, 110 165, 140 205 C 170 245, 200 210, 200 210" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 200 95 C 240 140, 290 165, 260 205 C 230 245, 200 210, 200 210" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+        <line x1="200" y1="210" x2="200" y2="245" stroke="#FFFFFF" stroke-width="4"/>
+        <circle cx="200" cy="255" r="12" fill="none" stroke="#C0FF04" stroke-width="3"/>
+        <!-- Syringe Injection -->
+        <g transform="translate(40, 40)">
+          <line x1="30" y1="35" x2="30" y2="80" stroke="#FFFFFF" stroke-width="3"/>
+          <line x1="15" y1="35" x2="45" y2="35" stroke="#FFFFFF" stroke-width="3"/>
+          <rect x="15" y="80" width="30" height="90" rx="4" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+          <line x1="30" y1="170" x2="30" y2="178" stroke="#FFFFFF" stroke-width="4"/>
+          <line x1="30" y1="178" x2="30" y2="215" stroke="#C0FF04" stroke-width="2"/>
+          <circle cx="30" cy="221" r="4" fill="#C0FF04"/>
+        </g>
+        <!-- Tablets/Pills -->
+        <g transform="translate(180, 140)">
+          <rect x="95" y="30" width="40" height="60" rx="6" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+          <rect x="103" y="20" width="24" height="10" rx="2" fill="#C0FF04" stroke="#C0FF04" stroke-width="2"/>
+          <rect x="50" y="80" width="32" height="14" rx="7" fill="none" stroke="#FFFFFF" stroke-width="3" transform="rotate(-30 50 80)"/>
+          <line x1="66" y1="71" x2="66" y2="85" stroke="#C0FF04" stroke-width="2.5" transform="rotate(-30 50 80)"/>
+          <circle cx="75" cy="100" r="12" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+          <line x1="63" y1="100" x2="87" y2="100" stroke="#C0FF04" stroke-width="2.5"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- SECTION 1: HERO -->
+    <section class="hero-section">
+      <div class="hero-left fade-up">
+        <span class="eyebrow">AI Front Desk for Aesthetic & Med Spa Clinics</span>
+        <h1>How many clients did you <span class="highlight">lose</span> this week without even knowing?</h1>
+        <p>The calls that rang out. The DMs left on seen. The texts you meant to reply to. Every one of those was someone ready to book, who quietly went somewhere else.</p>
+        <div class="hero-cta-wrapper">
+          <a href="#schedule-consultation" class="btn btn-primary">Book a Free Consultation</a>
+        </div>
+        <span class="hero-sub-cta">30 minutes &middot; No pressure &middot; See it live</span>
+      </div>
+      
+      <div class="hero-right fade-up" style="transition-delay: 0.2s;">
+        <!-- Glowing radial blur behind the phone -->
+        <div style="position: absolute; width: 280px; height: 280px; border-radius: 50%; background-color: var(--lime-color); opacity: 0.15; filter: blur(60px); z-index: -1;"></div>
+        
+        <!-- Phone Mockup with Instagram chat -->
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="insta-header">
+              <div style="display:flex; align-items:center; gap:8px;">
+                <div class="insta-avatar">
+                  <div class="insta-avatar-inner">UR</div>
+                </div>
+                <div class="insta-username">ur.automations</div>
+              </div>
+              <button id="hero-clear-btn" class="insta-clear-btn">Clear All</button>
+            </div>
+            
+            <div class="insta-chat" id="hero-chat-container">
+              <!-- Animated chat messages injected via JS -->
+            </div>
+            
+            <div class="insta-quick-replies" id="hero-quick-replies">
+              <!-- Quick replies will be dynamically injected here -->
+            </div>
+            
+            <div class="insta-input-area">
+              <input type="text" id="hero-chat-input" placeholder="Type a message..." autocomplete="off">
+              <button id="hero-send-btn">Send</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating floating notification badges -->
+        <!-- WhatsApp -->
+        <div class="floating-icon fi-whatsapp">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.638 2.012 14.19 1.01 11.997 1.01c-5.442 0-9.866 4.372-9.87 9.802 0 1.764.47 3.487 1.366 5.022L2.434 20.4l4.213-1.246zm12.313-5.391c-.328-.164-1.94-.959-2.241-1.07-.301-.109-.52-.164-.739.164-.219.329-.848 1.07-1.039 1.29-.192.218-.384.245-.712.081-.328-.164-1.386-.51-2.639-1.627-.974-.87-1.63-1.946-1.821-2.274-.192-.329-.02-.507.144-.67.147-.146.328-.384.493-.575.164-.192.219-.328.328-.548.11-.219.055-.411-.028-.575-.082-.164-.739-1.777-1.012-2.435-.267-.64-.539-.553-.739-.563-.19-.011-.41-.012-.629-.012-.22 0-.575.082-.876.411-.3.329-1.15 1.123-1.15 2.74 0 1.616 1.177 3.178 1.341 3.397.164.22 2.316 3.537 5.61 4.96.783.338 1.395.54 1.872.69.787.25 1.5.215 2.066.13.63-.095 1.94-.794 2.213-1.562.273-.767.273-1.424.191-1.562-.081-.137-.3-.22-.627-.383z"/>
+          </svg>
+        </div>
+        <!-- Instagram -->
+        <div class="floating-icon fi-instagram">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+        </div>
+        <!-- Phone -->
+        <div class="floating-icon fi-phone">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.36 11.36 0 018.78 4c0-.55-.45-1-1-1H4.03c-.55 0-1 .45-1 1C3 16.58 13.42 27 20 27c.55 0 1-.45 1-1v-3.62c0-.55-.45-1-1-1z"/>
+          </svg>
+        </div>
+        <!-- SMS -->
+        <div class="floating-icon fi-sms">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: THE PAIN -->
+    <section class="pain-section fade-up">
+      <span class="eyebrow">The Cost of Unresponsiveness</span>
+      <h2 class="section-title text-centered">Be honest. How many messages are sitting unanswered right now?</h2>
+      
+      <div class="pain-grid">
+        <div class="pain-left">
+          <p>A missed call here. A voicemail nobody returned. A "how much is lip filler?" DM from last night that's still waiting. It doesn't feel like much in the moment. You're busy. You're with a client. You'll get to it later.</p>
+          <p>But here's the thing. The person on the other end won't wait. They message three clinics, and they book with whoever replies first. Every unanswered message isn't just a message. It's a client who already moved on.</p>
+        </div>
+        
+        <div class="pain-right">
+          <!-- Notification phone mockup -->
+          <div class="phone-mockup-pain">
+            <div class="lockscreen-header">
+              <div class="lockscreen-time">18:27</div>
+              <div class="lockscreen-date">Friday, June 12</div>
+            </div>
+            
+            <div class="phone-notification">
+              <div class="noti-icon missed">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.36 11.36 0 018.78 4c0-.55-.45-1-1-1H4.03c-.55 0-1 .45-1 1C3 16.58 13.42 27 20 27c.55 0 1-.45 1-1v-3.62c0-.55-.45-1-1-1z"/></svg>
+              </div>
+              <div class="noti-content">
+                <div class="noti-title"><span>Missed Call (3)</span><span class="noti-time">10m ago</span></div>
+                <div class="noti-desc">Potential Lip Filler Lead</div>
+              </div>
+            </div>
+            
+            <div class="phone-notification">
+              <div class="noti-icon voicemail">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 12c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3zM5 12c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3zm14-8c-2.76 0-5 2.24-5 5 0 .76.18 1.48.49 2.12-.9.55-1.96.88-3.09.88s-2.19-.33-3.09-.88c.31-.64.49-1.36.49-2.12 0-2.76-2.24-5-5-5S0 6.24 0 9c0 3.32 2.37 6.09 5.51 6.66 1.48.27 2.97-.24 3.99-1.28.32-.33.56-.73.71-1.15.54.48 1.2.77 1.9.77s1.36-.29 1.9-.77c.15.42.39.82.71 1.15 1.02 1.04 2.51 1.55 3.99 1.28C21.63 15.09 24 12.32 24 9c0-2.76-2.24-5-5-5z"/></svg>
+              </div>
+              <div class="noti-content">
+                <div class="noti-title"><span>Voicemail</span><span class="noti-time">45m ago</span></div>
+                <div class="noti-desc">"Hey, want to ask about pricing..."</div>
+              </div>
+            </div>
+            
+            <div class="phone-notification">
+              <div class="noti-icon dm">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+              </div>
+              <div class="noti-content">
+                <div class="noti-title"><span>Instagram DM</span><span class="noti-time">Yesterday</span></div>
+                <div class="noti-desc">"Hi, do you have openings today?"</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pain-punchline">
+        So really ask yourself: how many of those are you <span class="highlight">losing in a month?</span>
+      </div>
+    </section>
+
+    <!-- SECTION 3: REVENUE LOSS STATS -->
+    <section class="stats-section fade-up">
+      <span class="eyebrow">The Agony of the Math</span>
+      <h2 class="section-title text-centered">Let's actually do the math. It's worse than it feels.</h2>
+      
+      <div class="stats-grid">
+        <!-- Card 1 -->
+        <div class="glass-card stat-card">
+          <div>
+            <div class="stat-value" id="stats-daily">$1,000</div>
+            <div class="stat-label">Lost Per Day</div>
+          </div>
+          <p class="stat-desc">Based on missing just 1 prospective treatment lead per day at standard spa booking values.</p>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="glass-card stat-card">
+          <div>
+            <div class="stat-value" id="stats-monthly">$30K</div>
+            <div class="stat-label">Lost Per Month</div>
+          </div>
+          <p class="stat-desc">Leads who simply booking with the first competitor who replied, while you were busy in treatments.</p>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="glass-card stat-card" style="border-color: rgba(192, 255, 4, 0.2); background: radial-gradient(120% 120% at 50% 0%, rgba(192, 255, 4, 0.04) 0%, rgba(10, 10, 10, 0.7) 100%);">
+          <p class="stat-emphasis">"You're not short on leads. You're losing the ones you already paid for."</p>
+          <div style="margin-top:20px; border-top:1px solid rgba(255,255,255,0.05); padding-top:16px;">
+            <span style="font-size:0.8rem; font-weight:700; color:var(--lime-color); text-transform:uppercase; letter-spacing:0.05em;">UR AUTOMATIONS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Calculator block -->
+      <div class="glass-card" style="width:100%; margin-top:40px; max-width: 900px; padding:32px;">
+        <h3 style="font-size:1.3rem; margin-bottom:12px; color:#fff;">Calculate your clinic's actual revenue leaks</h3>
+        <p style="font-size:0.95rem; margin-bottom:24px;">Adjust the sliders to reflect your clinic's average numbers and see the impact.</p>
+        
+        <div class="solution-grid" style="grid-template-columns: 1.2fr 0.8fr; gap:40px; margin-top:0;">
+          <div class="calc-container">
+            <div>
+              <div class="calc-row">
+                <span class="calc-label">Average Client Booking Value:</span>
+                <span class="calc-result" id="calc-display-value">$1,000</span>
+              </div>
+              <input type="range" class="calc-slider" id="calc-slider-value" min="200" max="3000" step="100" value="1000">
+            </div>
+            
+            <div>
+              <div class="calc-row">
+                <span class="calc-label">Estimated Unanswered Leads Per Day:</span>
+                <span class="calc-result" id="calc-display-leads">1</span>
+              </div>
+              <input type="range" class="calc-slider" id="calc-slider-leads" min="1" max="10" step="1" value="1">
+            </div>
+          </div>
+          
+          <div style="display:flex; flex-direction:column; justify-content:center; align-items:flex-start; border-left:1px solid rgba(255,255,255,0.05); padding-left:40px; gap:8px;">
+            <span style="font-size:0.85rem; color:var(--text-muted); text-transform:uppercase;">Estimated Leakage Rate</span>
+            <span style="font-size:1.1rem; color:#fff;">Ensure response speed is instant. You are losing these clients to competitors right now.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: THE DREAM -->
+    <section class="dream-section fade-up">
+      <div class="dream-left">
+        <span class="eyebrow">The Ideal Scenario</span>
+        <h2 class="section-title">Now imagine someone was always there to answer.</h2>
+        <p>Picture this. Every call picked up on the first ring. Every Instagram DM, every WhatsApp, every text, every website chat answered the second it comes in. Not in an hour. Not tomorrow. Instantly.</p>
+        <p>To do that with people, you'd need to hire four or five front-desk staff, one for each channel, working around the clock. That's a small fortune in salaries every month.</p>
+        
+        <div class="quote-card">
+          <p>“What if you could get all of that for a fraction of the cost?”</p>
+        </div>
+      </div>
+      
+      <div class="dream-right">
+        <!-- Chat widget mockup -->
+        <div class="chat-widget-mockup">
+          <div class="chat-widget-header">
+            <div class="chat-bot-profile">
+              <div class="chat-bot-avatar">AI</div>
+              <div class="chat-bot-info">
+                <h4>AI Front Desk</h4>
+                <span>Active 24/7</span>
+              </div>
+            </div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">SMS & Messaging</div>
+          </div>
+          
+          <div class="chat-widget-body" id="dream-chat-body">
+            <!-- Simulated booking flow injected via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: THE SOLUTION -->
+    <section class="solution-section fade-up" id="how-it-works">
+      <span class="eyebrow">UR Automations Infrastructure</span>
+      <h2 class="section-title text-centered">Meet your AI Front Desk.</h2>
+      <p style="text-align: center; max-width: 680px; margin-bottom: 50px;">A MULTI-CHANNEL LEAD CAPTURE SYSTEM.</p>
+      
+      <!-- 4 Cards -->
+      <div class="solution-grid">
+        <!-- Card 1 -->
+        <div class="glass-card solution-card">
+          <div class="solution-icon-container">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+            </svg>
+          </div>
+          <h3>24/7 Responses</h3>
+          <p>Late night requests are your best converting leads. Settle bookings while your competitors are asleep.</p>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="glass-card solution-card">
+          <div class="solution-icon-container">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+            </svg>
+          </div>
+          <h3>Instant Replies</h3>
+          <p>Under 3 seconds response times across WhatsApp and Instagram DMs. Keep leads engaged before they bounce.</p>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="glass-card solution-card">
+          <div class="solution-icon-container">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+            </svg>
+          </div>
+          <h3>Consultation Booking</h3>
+          <p>AI integrates with Boulevard, Jane, PatientNow, or Google Calendars to schedule slot bookings directly.</p>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="glass-card solution-card">
+          <div class="solution-icon-container">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M4 4h16v12H4V4zm9 4l-3 3-1-1-1 1 2 2 4-4-1-1zm6 12H5v2h14v-2z"/>
+            </svg>
+          </div>
+          <h3>Multi-Channel Messaging</h3>
+          <p>Universal lead routing. Sits across Phone lines, SMS, Instagram, WhatsApp, and Web Live Chat.</p>
+        </div>
+      </div>
+      
+      <!-- Detailed explanation loops -->
+      <div class="solution-explain">
+        <div>
+          <h4>One system that sits across every channel your clients use.</h4>
+          <p style="margin-bottom: 20px;">Phone, Instagram, WhatsApp, SMS, and your website. The moment a lead comes in on any of them, it gets captured, answered, and instantly followed up.</p>
+          <p>A lead messages. The AI replies in seconds, sounding exactly like your front desk. It answers their questions, qualifies them, and books the consultation straight into your calendar. Nothing slips through, on any channel, ever.</p>
+        </div>
+        <div class="solution-explain-right">
+          <div class="explain-loop-item">
+            <div class="benefit-check"><span style="font-size:0.65rem;">➔</span></div>
+            <p style="color:#fff; font-size:1.05rem; font-weight:600;">More replies means more bookings.</p>
+          </div>
+          <div class="explain-loop-item">
+            <div class="benefit-check"><span style="font-size:0.65rem;">➔</span></div>
+            <p style="color:#fff; font-size:1.05rem; font-weight:600;">More bookings means more revenue.</p>
+          </div>
+          <div class="explain-loop-item">
+            <div class="benefit-check"><span style="font-size:0.65rem;">➔</span></div>
+            <p style="color:#fff; font-size:1.05rem; font-weight:600;">More revenue means more growth.</p>
+          </div>
+          <div style="border-top:1px solid rgba(255,255,255,0.05); padding-top:16px; margin-top:8px;">
+            <p style="font-size:0.9rem; font-style:italic;">All driven automatically from the leads you were already losing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: THE PROOF -->
+    <section class="proof-section fade-up">
+      <div class="proof-left">
+        <span class="eyebrow">Proven Buying Behavior</span>
+        <h2>This isn't a hunch. It's how people actually buy.</h2>
+        <p>Studies show that businesses who respond first are far more likely to win the client, and roughly 78% of customers buy from whoever replies to them first. Speed isn't a nice-to-have. It's the whole game.</p>
+        <p style="font-weight:600; color:#fff;">Your AI Front Desk replies first, every time, on every channel. That's the difference between a booked chair and a lost lead.</p>
+      </div>
+      
+      <div class="proof-right">
+        <!-- Dramatic stat card -->
+        <div class="glass-card stat-showcase-card">
+          <span style="font-size:0.8rem; font-weight:700; color:var(--lime-color); text-transform:uppercase; letter-spacing:0.15em;">Conversion Dominance</span>
+          
+          <div class="stat-circle-wrapper">
+            <svg class="stat-circle-svg" viewBox="0 0 180 180">
+              <circle class="stat-circle-bg" cx="90" cy="90" r="80"></circle>
+              <circle class="stat-circle-progress" cx="90" cy="90" r="80"></circle>
+            </svg>
+            <div class="stat-big-number" id="proof-number">0%</div>
+          </div>
+          
+          <div class="stat-proof-desc">OF CUSTOMERS BUY FROM WHOEVER REPLIES FIRST.</div>
+          <p style="font-size:0.85rem;">Source: Harvard Business Review Lead Response Audit & Speed-to-Contact Research.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: BENEFITS -->
+    <section class="benefits-section fade-up" id="benefits">
+      <div class="benefits-left">
+        <span class="eyebrow">Immediate Performance</span>
+        <h2>What changes the week you turn it on.</h2>
+        
+        <div class="benefits-list">
+          <!-- Item 1 -->
+          <div class="benefit-item">
+            <div class="benefit-check">✓</div>
+            <div class="benefit-text">
+              <h3>Every call answered on the first ring.</h3>
+              <p>No more voicemail tag, no more "they booked elsewhere." Leads are routed and answered instantly.</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="benefit-item">
+            <div class="benefit-check">✓</div>
+            <div class="benefit-text">
+              <h3>Every DM and text replied to in seconds.</h3>
+              <p>The lead is still warm when you reach them. Capitalize on the hot booking intent.</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="benefit-item">
+            <div class="benefit-check">✓</div>
+            <div class="benefit-text">
+              <h3>Consultations booked straight into your calendar.</h3>
+              <p>No tedious back-and-forth communication. System locks schedules directly into your CRM.</p>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="benefit-item">
+            <div class="benefit-check">✓</div>
+            <div class="benefit-text">
+              <h3>Works 24/7, even when you're closed.</h3>
+              <p>Late-night inquiries are some of your best leads. Now you catch and calendar them automatically.</p>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="benefit-item">
+            <div class="benefit-check">✓</div>
+            <div class="benefit-text">
+              <h3>A fraction of the cost of one front-desk hire.</h3>
+              <p>Get full 24/7 coverage across 5 separate channels for less than a quarter of a single receptionist salary.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="benefits-right">
+        <!-- Luxury Med Spa Hallway generated image visual -->
+        <div class="luxury-visual-container">
+          <img src="luxury_clinic.png" alt="Futuristic Luxury Med Spa Treatment Hallway" class="luxury-visual-img">
+          <div class="luxury-visual-overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION FAQ: ACCORDION -->
+    <section class="fade-up" id="faq" style="max-width: 900px;">
+      <span class="eyebrow" style="text-align: center; display: block;">Frequently Asked Questions</span>
+      <h2 class="section-title text-centered">Got questions? We've got answers.</h2>
+      
+      <div style="display:flex; flex-direction:column; gap:16px; margin-top:40px; width: 100%;">
+        <!-- FAQ 1 -->
+        <details class="glass-card" style="padding:24px; cursor:pointer; list-style:none;">
+          <summary style="font-weight:700; color:#fff; display:flex; justify-content:space-between; align-items:center; list-style:none; outline:none;">
+            <span>How does the AI know how to answer questions about our specific treatments?</span>
+            <span style="color:var(--lime-color); font-size:1.2rem;">+</span>
+          </summary>
+          <p style="margin-top:16px; font-size:0.95rem; line-height:1.6;">We train the AI on your exact pricing, treatment protocols, and clinic policies. It only speaks on what it's authorized to know. If it encounters a complex medical query it cannot resolve, it automatically flags the thread for human review.</p>
+        </details>
+        
+        <!-- FAQ 2 -->
+        <details class="glass-card" style="padding:24px; cursor:pointer; list-style:none;">
+          <summary style="font-weight:700; color:#fff; display:flex; justify-content:space-between; align-items:center; list-style:none; outline:none;">
+            <span>Will it sound like a generic robot?</span>
+            <span style="color:var(--lime-color); font-size:1.2rem;">+</span>
+          </summary>
+          <p style="margin-top:16px; font-size:0.95rem; line-height:1.6;">No. We customize the tone, style, and vocabulary to match your clinic's brand voice—whether that's professional clinical, or warm and welcoming. We also integrate patient communication templates to keep dialogues natural.</p>
+        </details>
+        
+        <!-- FAQ 3 -->
+        <details class="glass-card" style="padding:24px; cursor:pointer; list-style:none;">
+          <summary style="font-weight:700; color:#fff; display:flex; justify-content:space-between; align-items:center; list-style:none; outline:none;">
+            <span>Can it integrate with our existing booking software?</span>
+            <span style="color:var(--lime-color); font-size:1.2rem;">+</span>
+          </summary>
+          <p style="margin-top:16px; font-size:0.95rem; line-height:1.6;">Yes, our system integrates directly with all major med spa booking calendars (Boulevard, PatientNow, Jane, Zenoti) and Google Calendars to pull open spots and schedule consultations in real-time without double-booking.</p>
+        </details>
+        
+        <!-- FAQ 4 -->
+        <details class="glass-card" style="padding:24px; cursor:pointer; list-style:none;">
+          <summary style="font-weight:700; color:#fff; display:flex; justify-content:space-between; align-items:center; list-style:none; outline:none;">
+            <span>What happens if a client asks a highly complex medical question?</span>
+            <span style="color:var(--lime-color); font-size:1.2rem;">+</span>
+          </summary>
+          <p style="margin-top:16px; font-size:0.95rem; line-height:1.6;">The AI handles pre-booking questions. If a query requires human medical expertise, it instantly flags the conversation and routes it to your clinical team via email or SMS notification so a provider can hop on.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- SECTION 8: FINAL CTA -->
+    <section class="cta-section fade-up" id="schedule-consultation">
+      <span class="eyebrow">Interactive Demo</span>
+      <h2 class="section-title text-centered">Want to see how this fits your clinic?</h2>
+      <p style="text-align: center;" id="contact">No hard sell. Book a quick consultation and we'll walk through exactly how your AI Front Desk would work for your clinic, your treatments, and your channels. You'll see it in action and decide if it's right for you. Simple as that.</p>
+      
+      <!-- Calendly mockup card -->
+      <div class="calendly-mock">
+        <div class="calendly-left">
+          <div>
+            <div class="calendly-host">
+              <div class="calendly-host-avatar">UR</div>
+              <div class="calendly-host-info">
+                <h4>UR Automations Expert</h4>
+                <p>Med Spa Solutions Team</p>
+              </div>
+            </div>
+            <h3 class="calendly-meeting-title">30-Min Live AI Front Desk Tour</h3>
+            
+            <div class="calendly-meeting-details">
+              <div class="calendly-detail-item">
+                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <span>30 Min Call</span>
+              </div>
+              <div class="calendly-detail-item">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
+                <span>Live Interactive Sandbox Demo</span>
+              </div>
+              <div class="calendly-detail-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span>No pressure, walk away with a custom mock outline</span>
+              </div>
+            </div>
+          </div>
+          
+          <div style="font-size:0.8rem; color:var(--text-muted);">
+            Booked slot holds are fully integrated.
+          </div>
+        </div>
+        
+        <div class="calendly-right" style="padding: 0; min-height: 580px; position: relative;">
+          <!-- Calendly inline widget begin -->
+          <!-- REPLACE 'https://calendly.com/d/demo/30min' WITH YOUR REAL CALENDLY LINK BELOW -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/a-umer6893/new-meeting?background_color=000000&text_color=ffffff&primary_color=c0ff04" style="min-width:320px; height:580px; width:100%; border:none;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <!-- Calendly inline widget end -->
+        </div>
+      </div>
+      
+      <span class="calendly-reassurance">30 minutes &middot; See it live &middot; Walk away knowing exactly what it'd do for you</span>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <a href="#" class="footer-logo">UR Automations</a>
+      <p class="footer-desc">Your AI Front Desk for aesthetic & med spa clinics.</p>
+      
+      <ul class="footer-links">
+        <li class="footer-link-item"><a href="#how-it-works">How It Works</a></li>
+        <li class="footer-link-item"><a href="#benefits">Benefits</a></li>
+        <li class="footer-link-item"><a href="#faq">FAQ</a></li>
+        <li class="footer-link-item"><a href="#contact">Contact</a></li>
+      </ul>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 UR Automations. All rights reserved.</p>
+        <p>urautomations.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
